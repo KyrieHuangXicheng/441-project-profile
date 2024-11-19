@@ -106,25 +106,27 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: space-around;
-    background-color: #f8f9fa; 
-    padding: 10px 0; 
+    background-color: #000000; 
+    padding: 10px 0;
 }
 
 nav li,
 .navbar ul li,
 nav ul li {
-    margin-left: 20px; 
+    margin-left: 20px;
 }
 
 nav a,
 .navbar a {
-    color: rgb(0, 0, 0); 
+    color: white; 
     text-decoration: none;
 }
 
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
+
+nav a:hover, 
+/*.navbar a:hover {  
+    background-color: #555555; 
+    color: white; 
 }
 
 
@@ -150,7 +152,6 @@ main,
     height: auto;
 }
 
-
 .cart {
     width: 50%;
     margin: auto;
@@ -167,7 +168,6 @@ main,
     color: white;
     border-radius: 5px;
 }
-
 
 footer {
     background-color: #000000;
