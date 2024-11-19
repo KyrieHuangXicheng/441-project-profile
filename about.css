@@ -9,6 +9,7 @@ body {
     flex-direction: column;
 }
 
+
 #app-container {
     display: flex;
     justify-content: center;
@@ -25,6 +26,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     max-width: 80%; 
 }
+
 
 form {
     display: flex;
@@ -57,13 +59,13 @@ input[type="text"] {
 
 button {
     padding: 0.75rem 20px; 
-    background-color: #4CAF50;
+    background-color: #4CAF50; 
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 3px; 
     text-align: center;
-    width: auto;
+    width: auto; 
 }
 
 button:hover {
@@ -74,7 +76,7 @@ button:hover {
 header,
 .header,
 .navbar {
-    background-color: #333;
+    background-color: #333; 
     color: white;
     padding: 10px 20px; 
     display: flex;
@@ -148,7 +150,7 @@ main,
     height: auto;
 }
 
-/* 购物车样式 */
+
 .cart {
     width: 50%;
     margin: auto;
