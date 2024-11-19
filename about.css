@@ -1,15 +1,14 @@
-/* 基础样式 */
+/Kyrie HuangXicheng/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* 选择了最后一个定义的颜色 */
+    background-color: #f4f4f4; 
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-/* 应用容器 */
 #app-container {
     display: flex;
     justify-content: center;
@@ -24,10 +23,9 @@ body {
     padding: 2rem;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 80%; /* 假设一个合理的最大值 */
+    max-width: 80%; 
 }
 
-/* 表单样式 */
 form {
     display: flex;
     flex-direction: column;
@@ -52,39 +50,39 @@ select {
 }
 
 input[type="text"] {
-    margin-bottom: 1rem; /* 保持与其他input的一致性 */
-    padding: 0.5rem; /* 如果需要特别处理，可以单独定义 */
+    margin-bottom: 1rem; 
+    padding: 0.5rem; 
 }
 
-/* 按钮样式 */
+
 button {
-    padding: 0.75rem 20px; /* 综合了不同padding的定义 */
-    background-color: #4CAF50; /* 选择了较通用的颜色，可以根据需要调整 */
+    padding: 0.75rem 20px; 
+    background-color: #4CAF50;
     color: white;
     border: none;
     cursor: pointer;
-    border-radius: 3px; /* 保持一致性 */
+    border-radius: 3px; 
     text-align: center;
-    width: auto; /* 除非特别需要，否则不强制100%宽度 */
+    width: auto;
 }
 
 button:hover {
-    background-color: #0056b3; /* 选择了较通用的hover颜色，或根据具体需要调整 */
+    background-color: #0056b3; 
 }
 
-/* 头部样式 */
+
 header,
 .header,
 .navbar {
-    background-color: #333; /* 统一头部背景色 */
+    background-color: #333;
     color: white;
-    padding: 10px 20px; /* 统一头部内边距 */
+    padding: 10px 20px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky; /* 可选，根据需求是否保留 */
+    position: sticky; 
     top: 0;
-    z-index: 1000; /* 可选，根据需求是否保留 */
+    z-index: 1000; 
 }
 
 header h1,
@@ -97,7 +95,7 @@ header h1,
     height: auto;
 }
 
-/* 导航样式 */
+
 nav,
 .navbar ul,
 nav ul {
@@ -106,19 +104,19 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: space-around;
-    background-color: #f8f9fa; /* 可选，根据需求是否保留 */
-    padding: 10px 0; /* 可选，根据需求是否保留 */
+    background-color: #f8f9fa; 
+    padding: 10px 0; 
 }
 
 nav li,
 .navbar ul li,
 nav ul li {
-    margin-left: 20px; /* 或 margin-right: 20px，根据布局需要选择 */
+    margin-left: 20px; 
 }
 
 nav a,
 .navbar a {
-    color: white; /* 或 rgb(0, 0, 0)，根据背景色选择高对比度颜色 */
+    color: white; 
     text-decoration: none;
 }
 
@@ -127,7 +125,7 @@ nav a,
     color: black;
 }
 
-/* 主内容样式 */
+
 main,
 .container {
     width: 80%;
