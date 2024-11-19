@@ -1,0 +1,180 @@
+/* 基础样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* 选择了最后一个定义的颜色 */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 应用容器 */
+#app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+}
+
+#app {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 80%; /* 假设一个合理的最大值 */
+}
+
+/* 表单样式 */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    margin-bottom: 1rem; /* 保持与其他input的一致性 */
+    padding: 0.5rem; /* 如果需要特别处理，可以单独定义 */
+}
+
+/* 按钮样式 */
+button {
+    padding: 0.75rem 20px; /* 综合了不同padding的定义 */
+    background-color: #4CAF50; /* 选择了较通用的颜色，可以根据需要调整 */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px; /* 保持一致性 */
+    text-align: center;
+    width: auto; /* 除非特别需要，否则不强制100%宽度 */
+}
+
+button:hover {
+    background-color: #0056b3; /* 选择了较通用的hover颜色，或根据具体需要调整 */
+}
+
+/* 头部样式 */
+header,
+.header,
+.navbar {
+    background-color: #333; /* 统一头部背景色 */
+    color: white;
+    padding: 10px 20px; /* 统一头部内边距 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* 可选，根据需求是否保留 */
+    top: 0;
+    z-index: 1000; /* 可选，根据需求是否保留 */
+}
+
+header h1,
+.navbar h1 {
+    margin: 0;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+/* 导航样式 */
+nav,
+.navbar ul,
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f9fa; /* 可选，根据需求是否保留 */
+    padding: 10px 0; /* 可选，根据需求是否保留 */
+}
+
+nav li,
+.navbar ul li,
+nav ul li {
+    margin-left: 20px; /* 或 margin-right: 20px，根据布局需要选择 */
+}
+
+nav a,
+.navbar a {
+    color: white; /* 或 rgb(0, 0, 0)，根据背景色选择高对比度颜色 */
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* 主内容样式 */
+main,
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    color: #000000;
+}
+
+.container p {
+    text-align: justify;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 购物车样式 */
+.cart {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.cart-checkbox {
+    margin-right: 10px;
+}
+
+.remove-selected-button {
+    margin-top: 1px;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+}
+
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
