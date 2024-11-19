@@ -1,5 +1,5 @@
 let isLoggedIn = false;
-let registeredUsers = {}; // 模拟已注册用户数据库
+let registeredUsers = {}; 
 let cart = {};
 
 function toggleFormView(formType) {
@@ -76,7 +76,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     toggleFormView('login');
 
-    // 购物车功能
     document.getElementById('addToCartBtn').addEventListener('click', function(e) {
         e.preventDefault();
         const courseId = this.dataset.courseId;
