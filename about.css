@@ -1,45 +1,102 @@
-/Kyrie HuangXicheng/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; 
+    background-color: #f4f4f4;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
-#app-container {
+/* Container */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* News Items */
+.news-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+.news-item:last-child {
+    border-bottom: none;
+}
+
+/* Subscribe Section */
+.subscribe-section {
+    margin-top: 20px;
+    text-align: center;
+}
+.subscribe-input {
+    padding: 10px;
+    width: 80%;
+    margin: 10px 0;
+}
+.subscribe-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.subscribe-button:hover {
+    background-color: #555;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    overflow: hidden;
+    padding: 10px 0;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    overflow: auto;
+    justify-content: space-around;
+}
+nav li {
+    float: right;
+    margin-left: 20px;
+}
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+nav li a:hover {
+    background-color: #555;
 }
 
-#app {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 80%; 
-}
-
-
+/* Form Styles */
 form {
     display: flex;
     flex-direction: column;
     max-width: 600px;
     margin: 20px auto;
 }
-
 label {
     display: block;
     margin-bottom: 5px;
 }
-
 input,
 textarea,
 select {
@@ -50,125 +107,27 @@ select {
     box-sizing: border-box;
     margin-bottom: 10px;
 }
-
 input[type="text"] {
-    margin-bottom: 1rem; 
-    padding: 0.5rem; 
+    margin-bottom: 1rem;
+    padding: 0.5rem;
 }
 
-
+/* Button */
 button {
-    padding: 0.75rem 20px; 
-    background-color: #4CAF50; 
+    padding: 0.75rem 20px;
+    background-color: #4CAF50;
     color: white;
     border: none;
     cursor: pointer;
-    border-radius: 3px; 
+    border-radius: 3px;
     text-align: center;
-    width: auto; 
+    width: auto;
 }
-
 button:hover {
-    background-color: #0056b3; 
+    background-color: #0056b3;
 }
 
-
-header,
-.header,
-.navbar {
-    background-color: #333; 
-    color: white;
-    padding: 10px 20px; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky; 
-    top: 0;
-    z-index: 1000; 
-}
-
-header h1,
-.navbar h1 {
-    margin: 0;
-}
-
-.logo {
-    width: 100px;
-    height: auto;
-}
-
-
-nav,
-.navbar ul,
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    background-color: #000000; 
-    padding: 10px 0;
-}
-
-nav li,
-.navbar ul li,
-nav ul li {
-    margin-left: 20px;
-}
-
-nav a,
-.navbar a {
-    color: white; 
-    text-decoration: none;
-}
-
-
-nav a:hover, 
-/*.navbar a:hover {  
-    background-color: #555555; 
-    color: white; 
-}
-
-
-main,
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.container h2 {
-    color: #000000;
-}
-
-.container p {
-    text-align: justify;
-}
-
-.container img {
-    max-width: 100%;
-    height: auto;
-}
-
-.cart {
-    width: 50%;
-    margin: auto;
-    text-align: center;
-}
-
-.cart-checkbox {
-    margin-right: 10px;
-}
-
-.remove-selected-button {
-    margin-top: 1px;
-    background-color: purple;
-    color: white;
-    border-radius: 5px;
-}
-
+/* Footer */
 footer {
     background-color: #000000;
     color: white;
@@ -177,4 +136,20 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Cart */
+.cart {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.cart-checkbox {
+    margin-right: 10px;
+}
+.remove-selected-button {
+    margin-top: 1px;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
 }
