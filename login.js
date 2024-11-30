@@ -88,11 +88,11 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('checkoutBtn').addEventListener('click', checkout);
 });
 
-function addToCart(courseId, coursePrice) {
-    if (cart[courseId]) {
-        cart[courseId].quantity++;
+function addToCart(courseName, coursePrice) {
+    if (cart[courseName]) {
+        cart[courseName].quantity++;
     } else {
-        cart[courseId] = { price: coursePrice, quantity: 1 };
+        cart[courseName] = { price: coursePrice, quantity: 1 };
     }
     updateCart();
 }
@@ -121,13 +121,13 @@ function checkout() {
 function updateCart() {
     let items = '';
     let total = 0;
-    for (let courseId in cart) {
-        if (cart.hasOwnProperty(courseId)) {
-            total += cart[courseId].price * cart[courseId].quantity;
+    for (let courseName in cart) {
+        if (cart.hasOwnProperty(courseName)) {
+            total += cart[courseName].price * cart[courseName].quantity;
             items += `
                 <li>
-                    <input type="checkbox" class="cart-checkbox" value="${courseId}">
-                    Course ${courseId} x ${cart[courseId].quantity} = $${cart[courseId].price * cart[courseId].quantity}
+                    <input type="checkbox" class="cart-checkbox" value="${courseName}">
+                    ${courseName} x ${cart[courseName].quantity} = $${(cart[courseName].price * cart[courseName].quantity).toFixed(2)}
                 </li>
             `;
         }
