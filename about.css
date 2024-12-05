@@ -153,3 +153,11 @@ footer {
     color: white;
     border-radius: 5px;
 }
+
+
+/*main*/
+main img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
